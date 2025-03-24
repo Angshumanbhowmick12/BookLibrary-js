@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header">
+      <div class="logo">
+        <img
+          src="https://clubs.scholastic.com/on/demandware.static/-/Sites-rco-us-Library/default/dw388be9f3/merchandising-root-folder/teacher-pages/teacher-login/2024_08/book-pages.png"
+        />
+        <h1>Book Library</h1>
+      </div>
+
+      <div class="search">
+        <input type="text" id="search-in" />
+        <button id="search-btn">search</button>
+      </div>
+      <div class="options">
+        <select class="toggle">
+          <option value="Grid" class="grid">Grid View</option>
+          <option value="List" class="list">List View</option>
+        </select>
+        <select class="sort">
+          <option value="title" class="title">Sort by Title</option>
+          <option value="date" class="date">Sort by Date</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div id="book-container" class="grid-view"></div>
+
+    <!-- pagination -->
+    <div class="load">
+      <button id="next">Next</button>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
