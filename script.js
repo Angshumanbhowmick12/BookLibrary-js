@@ -7,8 +7,9 @@ let bookspage = 10;
 
 // fetch all the books data
 const fetchData = async () => {
+  const options = {method: 'GET', headers: {accept: 'application/json'}};
   const data = await fetch(
-    `https://api.freeapi.app/api/v1/public/books?page=${currentPage}&limit=${bookspage}&inc=kind%252Cid%252Cetag%252CvolumeInfo&query=tech`
+    `https://api.freeapi.app/api/v1/public/books?page=${currentPage}&limit=${bookspage}&inc=kind%252Cid%252Cetag%252CvolumeInfo&query=tech`,options
   );
   const Json = await data.json(); // convert all the data to json format
 
