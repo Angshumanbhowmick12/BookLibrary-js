@@ -64,7 +64,7 @@ searchBtn.addEventListener("click", () => {
         .toLowerCase()
         .includes(query.value.toLowerCase())
   );
-
+  query.value =""
   console.log(filtered);
   bookList(filtered);
 });
